@@ -1,0 +1,18 @@
+Use case 1
+
+Lisa wants to travel from Uppsala to Stockholm.
+The train starts moving. Lisa is bored and wants to check
+the news before she gets to work. She starts the application
+and browses for "www.dn.se". The application sends the Lisa's request
+to the local NRS that is situated on the same train. 
+The NRS receives the request and returns devices that
+previously had downloaded the same webpage. Lisa's application
+will then start to check which devices are still on the train, so that
+it can connect to one of those and try to retrieve the webpage
+via Bluetooth. Lisa can now see the webpage she asked for. At this point,
+Lisa's device will inform the NRS that it can serve the webpage to other devices.
+
+Use case 2
+
+
+

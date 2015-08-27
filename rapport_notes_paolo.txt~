@@ -1,0 +1,8 @@
+The web view dos not support pdf.
+When publish is not enabled, no data is stored in the database either.
+
+Tested sites:
+- ul.se
+- sl.se
+- dn.se
+- 

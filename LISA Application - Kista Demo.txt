@@ -1,0 +1,3 @@
+Code used for frontend demo during the Kista demo Nov 1st.
+It is the LISA Application part of the code avaiable at:
+https://github.com/project-cs-2012/frontend/commit/9e8d21243c839839db2646d98d38bf140a25d7fe

@@ -1,0 +1,56 @@
+# Creates a new local branch <new.branch> from <branch.to.copy> 
+git checkout -b <new.branch> <branch.to.copy>
+
+# Creates a new remote branch <new.branch> from the current branch and tracks it
+git push -u origin <new.branch>
+
+# Pulls <remote.branch> from origin
+git pull origin <remote.branch>
+
+
+
+# Add <files> to be commited
+git add <files>
+
+# Commit <files>, where <description> is the commit message
+git commit -m <description>
+
+
+
+
+# Switches to the branch <branch>
+git checkout <branch>
+
+# merge <branch.to.merge> into the current branch
+git merge --no-ff <branch.to.merge>
+
+# push <branch> to origin
+git push origin <branch>
+
+# delete <branch> at origin
+git push origin --delete <branch>
+
+# delete local <branch>
+git branch -d <branch>
+
+
+
+
+# Restoring a deleted file
+# Find the hash of the latest commit that changed the file
+# Since the file is deleted, this must be the commit that deleted the file
+git rev-list -n 1 HEAD -- <file_path>
+
+# Checkout the file from one commit earlier than the deleting commit
+git checkout <deleting commit hash>^ -- <file_path>
+
+
+
+
+
+
+# Reseting a local branch by using the version from origin
+# Checkout the local version of the branch
+git checkout <branch>
+# Reset it using the remote version of the branch
+git reset --hard origin/<branch> 

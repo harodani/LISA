@@ -1,0 +1,47 @@
+----------------------------
+
+http://stackoverflow.com/questions/9816799/file-transfer-through-bluetooth
+
+------------------------------
+
+I was able to solve this problem by sending small chunks of data out to the bluetooth outstream. It turned out that 8 * 1024 was a good buffer size, which helped in sending out data seamlessly over the stream as well as preventing corruption of data at the receiving end.
+
+BufferedInputStream bis = new BufferedInputStream(fis, 8 * 1024);
+
+
+byte[] buffer = new byte[8192];
+int len
+while ((len = bis.read(buffer)) != -1) {
+    outStream.write(buffer, 0, len);
+}
+
+------------------------------
+
+http://stackoverflow.com/questions/8816279/android-bluetooth-file-transfer-over-bluetoothsocket
+
+------------------------------
+
+Try to use IOUtils and send the message back in the catch.
+
+------------------------------
+
+http://stackoverflow.com/questions/2660968/how-to-prevent-android-bluetooth-rfcomm-connection-from-dying-immediately-after
+
+------------------------------
+
+http://stackoverflow.com/questions/9748219/bluetooth-file-transfer-android
+
+------------------------------
+
+http://stackoverflow.com/questions/6326716/bluetooth-file-transfer
+
+------------------------------
+
+http://kpbird.blogspot.se/2011/04/android-send-image-via-bluetooth.html
+
+------------------------------
+
+http://stackoverflow.com/questions/4573761/bluetooth-file-transfer-in-android
+
+------------------------------
+

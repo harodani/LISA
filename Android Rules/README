@@ -1,0 +1,6 @@
+Eclipse won't recognise the phone unless we have
+configured a set of rules for the HTC phones.
+
+1. Copy the file "51-android.rules" from your Dropbox folder into "/etc/udev/rules.d/"
+2. Run: "sudo service udev restart"
+3. Restart your computer and the phone
